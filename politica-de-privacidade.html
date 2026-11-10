@@ -14,40 +14,92 @@
     p, li { color: var(--texto); }
     .data { color: var(--suave); margin: 0 0 24px; }
     a { color: var(--destaque); }
+    table { width: 100%; border-collapse: collapse; margin: 8px 0 16px; font-size: 15px; }
+    th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid rgba(127,127,127,.3); }
+    th { color: var(--suave); font-weight: 600; }
+    .tabela { overflow-x: auto; }
   </style>
 </head>
 <body>
 <main>
   <h1>Política de Privacidade do Influence</h1>
-  <p class="data">Última atualização: 21 de outubro de 2026</p>
+  <p class="data">Versão de 7 de novembro de 2026</p>
 
-  <p>O Influence conecta marcas e influenciadores para campanhas. Esta página explica quais dados usamos, por que usamos e como você pode pedir para apagá-los.</p>
+  <p>O Influence conecta marcas e influenciadores para campanhas. Esta política explica, em linguagem simples, quais dados usamos, por quê, quem vê cada coisa, onde os dados ficam, por quanto tempo e como você exerce os seus direitos pela Lei Geral de Proteção de Dados (LGPD, Lei 13.709/2018).</p>
 
-  <h2>Dados que você informa</h2>
+  <h2>Quem cuida dos seus dados</h2>
+  <p>O controlador dos dados é o Influence. O contato do encarregado de dados (DPO) é <a href="mailto:bovolentaeco@gmail.com">bovolentaeco@gmail.com</a>. Respondemos em até 15 dias.</p>
+
+  <h2>Quais dados usamos e por quê</h2>
+  <div class="tabela">
+  <table>
+    <tr><th>Dado</th><th>Para quê</th><th>Base legal (LGPD)</th></tr>
+    <tr><td>E-mail e senha</td><td>Criar e proteger a sua conta. A senha é guardada criptografada pelo provedor de login; ninguém do Influence consegue lê-la.</td><td>Execução do contrato (art. 7º, V)</td></tr>
+    <tr><td>Faixa de idade e aceite destes termos (data e versão)</td><td>Cumprir a idade mínima e provar o seu consentimento.</td><td>Obrigação legal (art. 7º, II) e art. 14</td></tr>
+    <tr><td>Perfil: nome, cidade, nichos ou segmentos, descrição, foto, site</td><td>Mostrar você para marcas ou influenciadores.</td><td>Execução do contrato</td></tr>
+    <tr><td>Redes sociais (@ e links)</td><td>Atalhos no seu perfil e selo de conta conferida.</td><td>Execução do contrato</td></tr>
+    <tr><td>Campanhas, candidaturas e respostas da triagem</td><td>Fazer a seleção entre marca e influenciador.</td><td>Execução do contrato</td></tr>
+    <tr><td>Mensagens, fotos, vídeos, áudios e documentos do chat</td><td>Conversa entre as duas partes.</td><td>Execução do contrato</td></tr>
+    <tr><td>Portfólio, posts do Inspire-se, curtidas e quem você segue</td><td>Mostrar seus trabalhos e montar o mural.</td><td>Execução do contrato</td></tr>
+    <tr><td>Agenda e tarefas</td><td>Organizar suas entregas. Só você vê.</td><td>Execução do contrato</td></tr>
+    <tr><td>Aviso de notificação do aparelho</td><td>Mandar notificações que você ligou. Desligue quando quiser no Perfil.</td><td>Consentimento (art. 7º, I)</td></tr>
+    <tr><td>Denúncias e bloqueios</td><td>Manter o app seguro contra golpes e assédio.</td><td>Legítimo interesse (art. 7º, IX)</td></tr>
+  </table>
+  </div>
+  <p>Fotos enviadas pelo app são redesenhadas antes de subir, o que tira a localização (GPS) e outros dados escondidos no arquivo. Não usamos seus dados para publicidade e não vendemos dados a ninguém.</p>
+
+  <h2>Quem vê o quê</h2>
   <ul>
-    <li>Conta: e-mail e senha de acesso ao Influence (a senha é guardada de forma criptografada pelo nosso provedor de login).</li>
-    <li>Perfil: nome, cidade, nichos ou segmentos, descrição, foto, site (marcas) e o @ das suas redes sociais.</li>
-    <li>Uso do app: campanhas, candidaturas, respostas de triagem, mensagens do chat, agenda, portfólio e posts do Inspire-se.</li>
+    <li><strong>Pessoas com conta no Influence</strong>: seu perfil (nome, foto, cidade, nichos, descrição, site, redes), seu portfólio e seus posts do Inspire-se. Quem não tem conta não vê nada.</li>
+    <li><strong>Só as duas partes</strong>: mensagens e anexos do chat, candidaturas e respostas da triagem (a marca dona da campanha e o influenciador).</li>
+    <li><strong>Só você</strong>: e-mail, faixa de idade, agenda, quem você bloqueou e as denúncias que você fez. Quem você denuncia ou bloqueia não fica sabendo.</li>
+    <li><strong>Equipe de moderação do Influence</strong>: o conteúdo denunciado, para decidir se ele sai do ar.</li>
   </ul>
 
-  <h2>Conexão com o Instagram</h2>
-  <p>Se você tocar em “Verificar com o Instagram”, você entra no próprio Instagram, e o Influence nunca vê a sua senha. Com a sua autorização, o Instagram nos informa apenas o identificador e o nome de usuário (@) da conta. Usamos isso só para mostrar o selo “verificado” no seu perfil e o atalho para o seu Instagram. Não publicamos nada em seu nome, não lemos mensagens e não guardamos o código de acesso do Instagram depois da verificação.</p>
-
-  <h2>Quem vê seus dados</h2>
-  <p>As informações do perfil, incluindo site e redes sociais, ficam visíveis para quem tem conta no Influence. Mensagens e candidaturas só são vistas pelas partes envolvidas. Não vendemos dados a ninguém.</p>
+  <h2>Com quem compartilhamos (operadores)</h2>
+  <ul>
+    <li><strong>Supabase</strong>: banco de dados, login e arquivos.</li>
+    <li><strong>GitHub Pages</strong>: hospeda o site do app (não recebe seus dados de perfil).</li>
+    <li><strong>Cloudflare Turnstile</strong>: verificação contra robôs no cadastro e no login, quando ligada.</li>
+    <li><strong>Serviço de notificações do seu aparelho</strong> (Apple, Google ou o seu navegador), só se você ligar as notificações.</li>
+    <li><strong>Instagram</strong>, só se você tocar em “Verificar com o Instagram”: ele nos diz apenas o identificador e o @ da conta. Não vemos a sua senha, não publicamos nada e não lemos mensagens.</li>
+  </ul>
+  <p>Também podemos entregar dados a autoridades quando a lei ou uma ordem judicial exigir.</p>
 
   <h2>Onde os dados ficam</h2>
-  <p>Os dados ficam armazenados no Supabase, nosso provedor de banco de dados, com acesso protegido por regras de segurança.</p>
+  <p>Os dados ficam em servidores do Supabase nos Estados Unidos (região us-east-1). Essa transferência internacional é feita para cumprir o contrato com você (art. 33, IX da LGPD), com um provedor que adota padrões de segurança reconhecidos: dados criptografados em trânsito e guardados, acesso por regras de segurança linha a linha e cópias de segurança.</p>
 
-  <h2 id="excluir-dados">Como apagar seus dados</h2>
-  <p>Passo a passo completo: <a href="/excluir-dados.html">gabibovolenta.github.io/excluir-dados.html</a>.</p>
+  <h2>Por quanto tempo guardamos</h2>
   <ul>
-    <li>Para remover a conexão com o Instagram: no app, vá em Perfil › Editar e apague o campo do Instagram, ou remova o Influence em Instagram › Configurações › Apps e sites.</li>
-    <li>Para apagar a conta e todos os dados: envie um pedido pelo contato abaixo, com o e-mail da conta. Apagamos tudo em até 30 dias.</li>
+    <li>Enquanto a sua conta existir. Ao excluir a conta, apagamos na hora o perfil, campanhas, candidaturas, conversas, fotos, vídeos e publicações.</li>
+    <li>Mensagens e candidaturas de campanhas encerradas há mais de 24 meses podem ser apagadas automaticamente.</li>
+    <li>Cópias de segurança, quando existem, são substituídas em até 30 dias.</li>
   </ul>
 
+  <h2 id="menores">Adolescentes de 13 a 17 anos</h2>
+  <p>O Influence não é para menores de 13 anos. Quem tem de 13 a 17 anos só pode usar com a autorização de um pai, mãe ou responsável legal, que deve ler estes termos junto. Tratamos os dados de adolescentes no seu melhor interesse (art. 14 da LGPD): não usamos para publicidade e coletamos só o necessário para o app funcionar. Um responsável pode pedir a qualquer momento acesso aos dados ou a exclusão da conta pelo contato acima. Se descobrirmos uma conta de menor de 13 anos, ela é apagada.</p>
+
+  <h2>Seus direitos</h2>
+  <p>Você pode, a qualquer momento:</p>
+  <ul>
+    <li><strong>Ver e baixar seus dados</strong>: no app, Perfil › Privacidade e segurança › Baixar meus dados.</li>
+    <li><strong>Corrigir</strong>: edite o perfil e as redes sociais no próprio app.</li>
+    <li><strong>Excluir a conta e todos os dados</strong>: Perfil › Privacidade e segurança › Excluir minha conta. Veja também <a href="/excluir-dados.html">como apagar seus dados</a>.</li>
+    <li><strong>Revogar consentimentos</strong>: desligar notificações ou remover a conexão com o Instagram.</li>
+    <li><strong>Pedir informações</strong> sobre com quem compartilhamos, se opor a um uso ou reclamar na Autoridade Nacional de Proteção de Dados (ANPD, <a href="https://www.gov.br/anpd">gov.br/anpd</a>).</li>
+  </ul>
+
+  <h2>Segurança</h2>
+  <p>Usamos conexão criptografada, senha mínima de 8 caracteres, regras no banco que impedem uma conta de ler ou mudar dados de outra, limites de envio contra spam, denúncias e bloqueios. Se acontecer um incidente que traga risco a você, avisaremos você e a ANPD.</p>
+
+  <h2>Cookies e armazenamento no aparelho</h2>
+  <p>Não usamos cookies de propaganda nem de rastreamento. O app guarda no seu aparelho só a sessão de login e preferências, como o tema claro ou escuro.</p>
+
+  <h2>Mudanças nesta política</h2>
+  <p>Quando houver mudança importante, o app pede que você leia e aceite a nova versão antes de continuar.</p>
+
   <h2>Contato</h2>
-  <p>Dúvidas ou pedidos sobre privacidade: <a href="mailto:bovolentaeco@gmail.com">bovolentaeco@gmail.com</a>.</p>
+  <p>Dúvidas ou pedidos sobre privacidade: <a href="mailto:bovolentaeco@gmail.com">bovolentaeco@gmail.com</a>. Veja também os <a href="/termos-de-uso.html">Termos de Uso</a>.</p>
 </main>
 </body>
 </html>
